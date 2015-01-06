@@ -2,7 +2,7 @@ from flask import Blueprint, render_template
 from cms.models import *
 cms = Blueprint("cms",__name__,template_folder='templates')
 
-@cms.route("/add",methods-["GET","POST"])
+@cms.route("/add",methods=["GET","POST"])
 def add():
 	return render_template("admin.html")
 

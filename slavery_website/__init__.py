@@ -1,4 +1,4 @@
-from flask import flask
+from flask import Flask
 from cms.views import cms
 
 app = Flask(__name__)
