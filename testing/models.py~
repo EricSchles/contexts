@@ -1,0 +1,7 @@
+import sqlite3
+
+def connect():
+    con = sqlite3.connect("database.db")
+    cur = con.cursor()
+    vals = cur.execute("select * from test").fetchall()
+    
