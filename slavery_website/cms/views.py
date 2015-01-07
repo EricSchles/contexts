@@ -1,5 +1,5 @@
 from flask import Blueprint, render_template
-from cms.models import *
+from models import *
 cms = Blueprint("cms",__name__,template_folder='templates')
 
 @cms.route("/add",methods=["GET","POST"])
