@@ -15,8 +15,5 @@ def get_button_press():
 def get_user_comments():
 	with sqlite3.connect("database.db") as con:
 		cur = con.cursor()
-		user_comments = cur.execute("select * from user_comments").	
-user_comments = get_user_comments()
-users = get_users()
-user_messages = get_user_messages()
-	
+		user_comments = cur.execute("select * from user_comments")
+
